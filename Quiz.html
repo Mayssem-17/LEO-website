@@ -1,0 +1,460 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/style3.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.min.css">
+    <link rel="icon" href="../project/image/logo.png">
+    <title>LEO</title>
+
+</head>
+<body>
+    <script lang="javascript">
+        function Result () {
+            let s=0;
+            if (document.getElementById("choix2").checked){
+                s++;
+            }
+            if (document.getElementById("issue").checked){
+                s++;
+            }
+            if (document.getElementById("spent").checked){
+                s++;
+            }
+            if (document.getElementById("highly").checked){
+                s++;
+            }
+            if (document.getElementById("we").checked){
+                s++;
+            }
+            if (document.getElementById("dist").checked){
+                s++;
+            }
+            if (document.getElementById("ought").checked){
+                s++;
+            }
+            if (document.getElementById("as").checked ){
+                s++;
+            }
+            if (document.getElementById("chance").checked){
+                s++;
+            }
+            if (document.getElementById("are").checked){
+                s++;
+            }
+            if (document.getElementById("go").checked ){
+                s++;
+            }
+            if (document.getElementById("th").checked ){
+                s++;
+            }
+
+            
+            switch(s){
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                    document.getElementById("result").value = s.toString() +"/12 sorry, you didn\'t pass";
+                break;
+                case 6:
+                case 7:
+                    document.getElementById("result").value = s.toString() +"/12 good job";
+                break;
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                document.getElementById("result").value = s.toString() +"/12 nice working";
+                break;
+                case 12:
+                    document.getElementById("result").value = s.toString() +"/12 perfect score, Brilliant !";
+                break;
+            }
+        }
+
+    </script>
+      <button onclick="topFunction()" id="Btn" title="Go to top">^<br/><span class="top">Top</span></button>
+        <script>
+       
+            let mybutton = document.getElementById("Btn");
+          
+            window.onscroll = function() 
+            
+            {scrollFunction()};
+        
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+    <section class="container">
+        <br/>
+        <h1 class="txt">English Test</h1>
+        <br/>
+
+    <br/>
+    <h3>This test contains grammar and vocabulary questions and your test result will help you choose a level to practise at.</h3>
+    <br/>    
+    <div>
+            <table>
+                <h5>Question 1 of 12 :</h5>
+                <th>
+                    Jack's parents _______ and so I am sure they would love to go to the exhibition.
+                </th>
+                  
+                <tr>
+                    <td>
+                        <input type="radio" id="choix1" name="answer" value="choix1"/>
+                        <label for="choix1"> like Picasso's paintings very much</label>
+                    </td>
+        
+                <tr>
+                    <td>
+                        <input type="radio" id="choix2" name="answer" value="choix2"/>
+                        <label for="choix2">like very much Picasso's paintings</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="choix3" name="answer" value="choix3"/>
+                        <label for="choix3">  much Picasso's paintings like</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="choix4" name="answer" value="choix4"/>
+                        <label for="choix4"> much like Picasso's paintings</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <h5>Question 2 of 12 :</h5>
+                <th>
+                    I think that the problem Henry has raised is a major _______ for our society today.
+                </th>
+                  
+                <tr>
+                    <td>
+                        <input type="radio" id="subject" name="answer1" value="subject"/>
+                        <label for="subject">subject</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="theme" name="answer1" value="theme"/>
+                        <label for="theme"> theme</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="issue" name="answer1" value="issue"/>
+                        <label for="issue"> issue</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="point" name="answer1" value="point"/>
+                        <label for="point"> point</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <h5>Question 3 of 12 :</h5>
+                <th>
+                    We _______ a lovely three weeks in the south of Spain last year.
+                </th>
+                  
+                <tr>
+                    <td>
+                        <input type="radio" id="took" name="answer2" value="took"/>
+                        <label for="took">took</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="did" name="answer2" value="did"/>
+                        <label for="did">did</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="spent" name="answer2" value="spent"/>
+                        <label for="spent"> spent</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="passed" name="answer2" value="passed"/>
+                        <label for="passed"> passed</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <h5>Question 4 of 12 :</h5>
+                <th>
+                    You should read this novel — it's been _______ recommended by all the critics.
+                </th>
+                  
+                
+                <tr>
+                    <td>
+                        <input type="radio" id="highly" name="answer3" value="highly"/>
+                        <label for="highly">highly</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="truly" name="answer3" value="truly"/>
+                        <label for="truly">truly</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="deeply" name="answer3" value="deeply"/>
+                        <label for="deeply">deeply</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <h5>Question 5 of 12 :</h5>
+                <th>
+                    The teacher asked if _______ to bring our textbooks to class.
+                </th>
+                  
+            
+                <tr>
+                    <td>
+                        <input type="radio" id="all" name="answer4" value="all"/>
+                        <label for="all">  all we had remembered</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="we" name="answer4" value="we"/>
+                        <label for="we">  we had all remembered</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="had" name="answer4" value="had"/>
+                        <label for="had">had we all remembered</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <h5>Question 6 of 12 :</h5>
+                <th>
+                    Jenny likes her job but she hates the long _______ to work every day.
+                </th>
+                  
+                
+                <tr>
+                    <td>
+                        <input type="radio" id="dist" name="answer5" value="dist"/>
+                        <label for="dist">distance</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="travel" name="answer5" value="travel"/>
+                        <label for="travel">travel</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="voy" name="answer5" value="voy"/>
+                        <label for="voy">voyage</label>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table>
+                <h5>Question 7 of 12 :</h5>
+                <th>
+                    You _______ to ring Aunt Jean to thank her for her present.
+                </th>
+                  
+                <tr>
+                    <td>
+                        <input type="radio" id="s" name="answer6" value="s"/>
+                        <label for="s">should</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="must" name="answer6" value="must"/>
+                        <label for="must">must</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="could" name="answer6" value="could"/>
+                        <label for="could">could</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="ought" name="answer6" value="ought"/>
+                        <label for="ought">ought</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <h5>Question 8 of 12 :</h5>
+                <th>
+                    Nina went to the same school _______ I did.                </th>
+                  
+                <tr>
+                    <td>
+                        <input type="radio" id="like" name="answer7" value="like"/>
+                        <label for="like">like</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="as" name="answer7" value="as"/>
+                        <label for="as">as</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="so" name="answer7" value="so"/>
+                        <label for="so">so</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <h5>Question 9 of 12 :</h5>
+                <th>
+                    If you do well at school you will have the _______ to go to university.
+                </th>
+                  
+                <tr>
+                    <td>
+                        <input type="radio" id="chance" name="answer8" value="chance"/>
+                        <label for="chance">chance</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="luck" name="answer8" value="luck"/>
+                        <label for="luck">luck</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="hope" name="answer8" value="hope"/>
+                        <label for="hope">hope</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <h5>Question 10 of 12 :</h5>
+                <th>
+                    What _______ you going to do in your summer holidays?
+                </th>
+                  
+                <tr>
+                    <td>
+                        <input type="radio" id="are" name="answer9" value="are"/>
+                        <label for="are">  are</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="do" name="answer9" value="do"/>
+                        <label for="do">do</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="will" name="answer9" value="will"/>
+                        <label for="will">will</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <h5>Question 11 of 12 :</h5>
+                <th>
+                    Would you like to _______ shopping with me this afternoon?
+                </th>
+                  
+                <tr>
+                    <td>
+                        <input type="radio" id="go" name="answer10" value="go"/>
+                        <label for="go">go</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="get" name="answer10" value="get"/>
+                        <label for="get">get</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <h5>Question 12 of 12 :</h5>
+                <th>
+                    I'm very _______ - could I have a glass of water, please?
+                </th>
+                  
+                <tr>
+                    <td>
+                        <input type="radio" id="hungry" name="answer11" value="hungry"/>
+                        <label for="hungry"> hungry</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="th" name="answer11" value="th"/>
+                        <label for="th"> thirsty</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+        </div>
+      
+    
+     
+      <br/>
+      <br/>
+      
+          <div class="container">
+              <input type="button" class="bttn" value="VERIFY" onclick="Result()"/>
+          </div>
+          <div class="row container">
+              
+                   <h1 class="result">Result :</h1>
+                <br/>
+                   <h1 class="resContainer">
+                      <input type="text" class="resContainer" id="result" value=""/>
+                   </h1>
+                
+          </div>
+      <br>
+      <br>
+      <br> 
+    </section>
+    </body>
+    </html>

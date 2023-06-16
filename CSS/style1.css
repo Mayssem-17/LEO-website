@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "font1";
+    src: url("../fonts/NatureBeautyPersonalUse-9Y2DK.ttf");
+}
+@font-face {
+    font-family: "font2";
+    src: url("../fonts/RocknRollOne-Regular.ttf");
+}
+body{
+    background-image: linear-gradient(to left,pink,lightblue,white);
+}
+h1{
+    text-align: center;
+    padding: 60px;
+
+    font-family: "font2";
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 20px;
+    
+}
+
+a{
+	text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.37);
+    text-transform: uppercase;
+    letter-spacing:3pt;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.menu{
+    word-spacing: 40px;
+    align-items: center;
+    margin-left: 10%;
+   }
+a:hover{
+	text-decoration: none;
+	color: rgb(0, 11, 110);	
+	font-family:'font2';
+}
+
+

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "font1";
+    src: url("../fonts/NatureBeautyPersonalUse-9Y2DK.ttf");
+}
+@font-face {
+    font-family: "font2";
+    src: url("../fonts/RocknRollOne-Regular.ttf");
+}
+body{
+    background-image: linear-gradient(to top ,pink,lightblue, white);
+
+
+}
+.txt{
+    color: rgb(0, 0, 0);
+    font-family: "font1";
+
+    background-color: rgba(4, 181, 235, 0.342);
+    padding: 30px;
+    border: 1px solid rgb(1, 188, 235);
+    border-radius: 20px;
+    text-align: center;
+}
+h3{
+    font-style: italic;
+font-family: Arial;
+color: rgb(94, 94, 94);
+}
+
+.resContainer{
+    border: none;
+    border-color: transparent;
+    background-color: transparent;
+    color: black;
+    width: 100%;
+    padding-bottom: 5px;
+    font-size: 40px;
+    padding-top: 30px;
+
+}
+.result{
+    padding-left: 45px;
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+#Btn {
+	display: none; 
+	position: fixed;
+	bottom: 20px; 
+	right: 30px;
+	z-index: 99; 
+	border: none; 
+	outline: none; 
+	background-color: rgb(179, 0, 140); 
+	color: white;
+	padding: 10px; 
+	border-radius: 20px;
+	font-size: 18px;
+	font-family: "font5";
+	font-weight: 100;
+	
+  }
+  
+  #Btn:hover {
+	background-color: rgb(100, 0, 104); 
+	color:rgb(255, 255, 255);
+  }
+
+  .bttn{
+    background-color: rgb(128, 0, 85);
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing:1px;
+	font-family: 'Times New Roman';
+	padding: 20px;
+	border-radius: 10px;
+	border-color: transparent;
+	transition:all 1s ease;
+}
+
+

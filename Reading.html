@@ -1,0 +1,493 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/style4.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.min.css">
+    <link rel="icon" href="../project/image/logo.png">
+    <title>LEO</title>
+
+</head>
+<body>
+    <script lang="javascript">
+        function Result () {
+            let s=0;
+            if (document.getElementById("Bread").checked){
+                s++;
+            }
+            if (document.getElementById("soup2").checked){
+                s++;
+            }
+            if (document.getElementById("steam").checked){
+                s++;
+            }
+            if (document.getElementById("judge").checked){
+                s++;
+            }
+            if (document.getElementById("noise").checked){
+                s++;
+            }
+            if (document.getElementById("sound").checked){
+                s++;
+            }
+            if (document.getElementById("ferry").checked){
+                s++;
+            }
+            if (document.getElementById("math").checked ){
+                s++;
+            }
+            if (document.getElementById("lang1").checked){
+                s++;
+            }
+            if (document.getElementById("school").checked){
+                s++;
+            }
+            if (document.getElementById("nass").checked ){
+                s++;
+            }
+            if (document.getElementById("nasss").checked ){
+                s++;
+            }
+            if (document.getElementById("yes").checked ){
+                s++;
+            }
+
+            
+            switch(s){
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                    document.getElementById("result").value = s.toString() +"/12 sorry, you didn\'t pass";
+                break;
+                case 6:
+                case 7:
+                    document.getElementById("result").value = s.toString() +"/12 good job";
+                break;
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                document.getElementById("result").value = s.toString() +"/12 nice working";
+                break;
+                case 13:
+                    document.getElementById("result").value = s.toString() +"/12 perfect score, Brilliant !";
+                break;
+            }
+        }
+
+    </script>
+     <button onclick="topFunction()" id="Btn" title="Go to top">^<br/><span class="top">Top</span></button>
+     <script>
+       
+       let mybutton = document.getElementById("Btn");
+     
+       window.onscroll = function() 
+       
+       {scrollFunction()};
+   
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           mybutton.style.display = "block";
+         } else {
+           mybutton.style.display = "none";
+         }
+       }
+       function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+       </script>
+  <section class="container">
+
+    <div class="row rowContainer">
+        <h1 class="txt">Reading: </h1>
+        <br>
+        <h3>read the text and choose the correct answer : </h3>
+        <div class="col-md-6 col-lg-6 col-sm-12 textContainer">
+            
+                <h2 class="text">Nasreddin and the Smell of Soup</h2>
+            
+            <p>
+            One day, a poor man, who had only one piece of bread to eat, <br>was walking past a restaurant.<br> There was a large pot of soup on the table. <br>The poor man held his bread over the soup, <br>so the steam from the soup went into the bread, and gave it a good smell.<br> Then he ate the bread.<br>
+            The restaurant owner was very angry at this,<br> and he asked the man for money, <br>in exchange for the steam from the soup. <br>The poor man had no money, so the restaurant owner took him to Nasreddin,<br> who was a judge at that time. <br>Nasreddin thought about the case for a little while.<br>
+            Then he took some money from his pocket. <br>He held the coins next to the restaurant owner's ear, <br>and shook them, so that they made a jingling noise.<br>
+            "What was that?" asked the restaurant owner.<br>
+            "That was payment for you," answered Nasreddin.<br>
+            "What do you mean? That was just the sound of coins!" protested the restaurant owner.<br>
+            "The sound of the coins is payment for the smell of the soup," answered Nasreddin. <br>"Now go back to your restaurant."<br>
+            </p>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-12 qContainer">
+            <div>
+                <table>
+                    <th>
+                        1. What food did the poor man have?
+                    </th>
+                      
+                    <tr>
+                        <td>
+                            <input type="radio" id="soup" name="answer" value="soup"/>
+                            <label for="soup">Soup</label>
+                        </td>
+            
+                    <tr>
+                        <td>
+                            <input type="radio" id="Bread" name="answer" value="Bread"/>
+                            <label for="Bread">Bread</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="nothing" name="answer" value="nothing"/>
+                            <label for="nothing">Nothing</label>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <th>
+                        2. What kind of food did he see in the restaurant?
+                    </th>
+                      
+                    <tr>
+                        <td>
+                            <input type="radio" id="bread2" name="answer1" value="bread"/>
+                            <label for="bread">Bread</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="meat" name="answer1" value="meat"/>
+                            <label for="meat">Meat</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="soup2" name="answer1" value="soup"/>
+                            <label for="soup">Soup</label>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <th>
+                        3.Why did he hold the bread over the soup?
+                    </th>
+                      
+                    <tr>
+                        <td>
+                            <input type="radio" id="steam" name="answer2" value="steam"/>
+                            <label for="steam">So the steam from the soup would go into the bread.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="hand" name="answer2" value="hand"/>
+                            <label for="hand">So he could warm his hand.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="rest" name="answer2" value="rest"/>
+                            <label for="rest">So the restaurant owner would get angry.</label>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <th>
+                        4.Why did the restaurant owner take the poor man to Nasreddin?
+                    </th>
+                      
+                    
+                    <tr>
+                        <td>
+                            <input type="radio" id="judge" name="answer3" value="judge"/>
+                            <label for="judge">Because Nasreddin was a judge.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="pay" name="answer3" value="pay"/>
+                            <label for="pay">So that Nasreddin could pay for the soup.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="relative" name="answer4" value="relative"/>
+                            <label for="relative">Because Nasreddin was the man's relative.</label>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <th>
+                        5.What did Nasreddin do with the coins?
+                    </th>
+                      
+                
+                    <tr>
+                        <td>
+                            <input type="radio" id="gave" name="answer4" value="gave"/>
+                            <label for="gave">He gave them to the restaurant owner.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="noise" name="answer4" value="noise"/>
+                            <label for="noise">He made a noise with them.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="relative" name="answer4" value="relative"/>
+                            <label for="relative">Because Nasreddin was the man's relative.</label>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <th>
+                        6.What was the payment for the smell of the soup?
+                    </th>
+                      
+                    
+                    <tr>
+                        <td>
+                            <input type="radio" id="sound" name="answer5" value="sound"/>
+                            <label for="sound">the sound of money</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="coins" name="answer5" value="coins"/>
+                            <label for="coins">a few coins</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="no" name="answer5" value="no"/>
+                            <label for="no">there was no payment</label>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+              
+            </div>
+        </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <div class="container">
+    <h1 class="txt">Listening: </h1>
+  </div>
+  
+  <section class="container bg">
+
+    
+    <br>
+    <h3>listen to the audio and choose the correct answer : </h3>
+    <div class="audioContainer">
+        <p>
+            <audio controls>
+                <source src="./audio/nasreddin-the-ferry-man.ogv" type="audio/ogg">
+              Your browser does not support the audio element.
+              </audio>
+        </p>
+        <br>
+        <table>
+            <th>
+                1. What was Nasreddin's job?
+            </th>
+              
+            <tr>
+                <td>
+                    <input type="radio" id="uni" name="answer6" value="uni"/>
+                    <label for="uni">university professor</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="ferry" name="answer6" value="ferry"/>
+                    <label for="Bread">ferry man</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="jud" name="answer6" value="jud"/>
+                    <label for="jud">judge</label>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>
+                2. What kind of question did the professor ask him first?
+            </th>
+              
+            <tr>
+                <td>
+                    <input type="radio" id="lang" name="answer7" value="lang"/>
+                    <label for="lang">a language question</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="history" name="answer7" value="history"/>
+                    <label for="history">a history question</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="math" name="answer7" value="math"/>
+                    <label for="math">a math question</label>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>
+                3.What kind of question did he ask second?
+            </th>
+              
+            <tr>
+                <td>
+                    <input type="radio" id="lang1" name="answer8" value="lang1"/>
+                    <label for="lang1">a language question</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="history1" name="answer8" value="history1"/>
+                    <label for="history1">a history question</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="math1" name="answer8" value="math1"/>
+                    <label for="math1">a math question</label>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>
+                4.Why didn't Nasreddin know any of the answers?
+            </th>
+              
+            <tr>
+                <td>
+                    <input type="radio" id="prof" name="answer9" value="prof"/>
+                    <label for="prof">He was a history professor.</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="school" name="answer9" value="school"/>
+                    <label for="school">He never studied at school.</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="swim" name="answer9" value="swim"/>
+                    <label for="swim">He couldn't swim.</label>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>
+                5.Which man was probably able to swim?
+            </th>
+              
+            <tr>
+                <td>
+                    <input type="radio" id="nass" name="answer10" value="nass"/>
+                    <label for="nass">Nasreddin</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="pr" name="answer10" value="pr"/>
+                    <label for="pr">the professor</label>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>
+                6.Who had the most useful knowledge?
+            </th>
+              
+            <tr>
+                <td>
+                    <input type="radio" id="nasss" name="answer11" value="nasss"/>
+                    <label for="nasss">Nasreddin</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="prr" name="answer10" value="prr"/>
+                    <label for="prr">the professor</label>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>
+                7.Did you like My project ? 
+            </th>
+              
+            
+            <tr>
+                <td>
+                    <input type="radio" id="yes" name="answer5" value="yes"/>
+                    <label for="yes">Yes</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="no" name="answer5" value="no"/>
+                    <label for="no">No</label>
+                </td>
+            </tr>
+    
+        </table>
+        <br>
+    </div>
+  
+
+
+ 
+  
+      <div class="container">
+        <br>
+        <br>
+          <input type="button" class="bttn" value="VERIFY" onclick="Result()"/>
+      </div>
+      <br/>
+      <br/>
+    
+      <div class="row container">
+          <div class="col-md-6 col-lg-6 col-sm-12">
+               <h1 class="result">Result :</h1>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12">
+               <h1 class="resContainer">
+                  <input type="text" class="resContainer" id="result" value=""/>
+               </h1>
+          </div>
+      </div>
+  <br>
+  <br>
+  <br>
+</section>
+
+</body>
+</html>
